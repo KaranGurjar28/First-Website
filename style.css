@@ -1,0 +1,131 @@
+/* This is header section css. */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    padding: 0 ;
+    background-color: pink;
+    
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    text-align: right;
+    justify-content: space-between;
+    padding: 0;
+    margin: 10px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    
+}
+
+nav h1{
+    font-family: 'Foldit', cursive;
+}
+
+/* here header section css ends */
+
+
+.content nav{
+    background-image: url(./Screenshot\ 2023-04-29\ 130737.png);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    margin: 0px;
+}
+
+nav h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(222%, 70%);
+    /* this is how we add content to center. */
+}
+
+.box{
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    transform: translate(135%, 50%);
+    height: 400px;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+    background-color: #F7C8E0;
+    border-radius: 30px;
+    opacity: 0.9;
+    animation: my 5s infinite;
+}
+
+@keyframes my {
+    from {background-color: #ff83c1;}
+    to {background-color: #D14D72;}
+  }
+
+.box li{
+    margin-top: 20px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.text{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-190%, 70%);
+    height: 350px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    background-color: #F7C8E0;
+    border-radius: 30px;
+    opacity: 0.9;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {background-color: #ff83c1;}
+    to {background-color: #D14D72;}
+  }
+
+/* This is how we added animation to move text up down */
+
+.content nav h2{
+    animation: MoveUpDown 1.5s linear infinite;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 250px;
+    }
+    50% {
+      bottom: 300px;
+    }
+  }
+
+  /* This is how we added animation to move text up down */
